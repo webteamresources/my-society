@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import fire from './config/Fire';
-import LoginRegister from './components/LoginRegister';
 import Home from './components/Home';
-import SignIn from './components/SignIn';
 import './App.css';
-import Register from './components/Register';
+import Login from './components/LoginRegister';
+import Profile from './components/pages/Profile';
+import Statement from './components/pages/Statement';
+import Events from './components/pages/Events';
 
 class App extends Component {
   constructor(){
@@ -29,9 +35,25 @@ class App extends Component {
 
   render(){
     return (
-      <div>
-        {this.state.user ? (<Home />) : (<Register />)}
-      </div>
+      <Router>
+        {this.state.user ? (
+          <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/profile">
+            <Profile />
+          </Route>
+          <Route path="/statement">
+            <Statement />
+          </Route>
+          <Route path="/events">
+            <Events />
+          </Route>
+        </Switch>
+        ) : (<Login />)}
+      
+      </Router>
     );
   }
 }

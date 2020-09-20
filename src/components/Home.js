@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import fire from '../config/Fire';
+import Header from './header/Header';
 
 class Home extends Component{
 
@@ -9,8 +10,8 @@ class Home extends Component{
     render(){
         return(
             <div>
-                <h1>Home Page</h1>
-                <button onClick={this.logout}>LogOut</button>
+                <h1>My Society</h1>
+                <Header />
             </div>
         )
     }
