@@ -44,7 +44,7 @@ class ForgotPassword extends Component {
             email: '',
             password: '',
             fireErrors: '',
-            formTitle: 'Login',
+            formTitle: 'Login Form',
             loginBtn: true
         };
     }

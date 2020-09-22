@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './App.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,7 +7,6 @@ import {
 } from "react-router-dom";
 import fire from './config/Fire';
 import Home from './components/Home';
-import './App.css';
 import Login from './components/LoginRegister';
 import Profile from './components/pages/Profile';
 import Statement from './components/pages/Statement';
