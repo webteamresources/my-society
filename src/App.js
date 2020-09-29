@@ -11,6 +11,7 @@ import Login from './components/LoginRegister';
 import Profile from './components/pages/Profile';
 import Statement from './components/pages/Statement';
 import Events from './components/pages/Events';
+import Members from './components/pages/Members';
 
 class App extends Component {
   constructor(){
@@ -51,6 +52,9 @@ class App extends Component {
           </Route>
           <Route path="/events">
             <Events />
+          </Route>
+          <Route path="/members">
+            <Members />
           </Route>
         </Switch>
         ) : (<Login />)}

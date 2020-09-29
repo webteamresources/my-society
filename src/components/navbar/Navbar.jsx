@@ -20,6 +20,7 @@ class Navbar extends Component{
                         <li><NavLink activeClassName="active" className="btn btn-primary" to="/profile">Profile</NavLink></li>
                         <li><NavLink activeClassName="active" className="btn btn-primary" to="/statement">Statement</NavLink></li>
                         <li><NavLink activeClassName="active" className="btn btn-primary" to="/events">Events</NavLink></li>
+                        <li><NavLink activeClassName="active" className="btn btn-primary" to="/members">Members</NavLink></li>
                         <li><Link className="btn btn-primary logoutButton" onClick={this.logout}>LogOut</Link></li>
                     </ul>
                 </nav>
